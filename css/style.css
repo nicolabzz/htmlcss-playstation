@@ -1,0 +1,24 @@
+* {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.jumbo {
+    background-image: url('../assets/img/jumbo-bg.png');
+    background-size: cover;
+    background-position: center;
+    padding: 200px 0 50px;
+
+}
+
+.ITT {
+    background-image: url('../assets/img/it-takes-two-hero-banner-desktop.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 200px 0 50px;
+}
+
+/* to be removed */
+.PPM { /* display: none; */ }
+
+.PPN { /* display: none; */ }
+/* ------------- */
