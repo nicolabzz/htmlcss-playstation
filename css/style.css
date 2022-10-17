@@ -17,8 +17,7 @@
     padding: 200px 0 50px;
 }
 
-/* to be removed */
-.PPM { /* display: none; */ }
-
-.PPN { /* display: none; */ }
-/* ------------- */
+footer a {
+    text-decoration: none;
+    color:white;
+}

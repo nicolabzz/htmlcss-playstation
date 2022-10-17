@@ -19,7 +19,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-    <!-- JavaScript -->
+    <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
@@ -32,39 +32,128 @@
 </head>
 <body>
 
-
+    <!-- PROVA -->
     <!-- Header start -->
     <header>
-        <nav>
 
-            <!-- Header Sony Logo -->
-            <div class="row justify-content-end bg-dark">
-                <div class="col-2">
-                    <a href=""><img src="assets/img/sony_logo.svg" alt=""></a>
-                </div>
-            </div>
-            <!-- / Heder Sony Logo -->
+        <div class="fixed-top">
 
-            <!-- Header Nav Menu -->
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <!-- Sony Logo -->
+			<div class="container-fluid d-flex justify-content-end py-2 bg-dark">
+                <img class="col-1" src="assets/img/sony_logo.svg" alt="">
+			</div>
+            <!-- / Sony Logo -->
+
+            <!-- Header navbar -->
+			<nav class="navbar navbar-expand-lg bg-light">
+
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img src="assets/img/play_logo.svg" alt=""></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
+
+                    
+                    <!-- PS Logo -->
+					<a class="navbar-brand" href="#">
+                        <img src="assets/img/play_logo.svg" alt="">
+					</a>
+                    <!-- / PS Logo -->
+
+
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+						<!-- Navbar left size -->
+                        
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Giochi
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <img src="img/play-menu-ico.png" alt="">
+                                        Playstation 5
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <img src="img/play-menu-ico.png" alt="">
+                                        Playstation 4
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+											<img src="img/play-menu-ico.png" alt="">
+											Playstation 3
+										</a>
+									</li>
+									<li class="w-100">
+                                        <hr class="dropdown-divider">
+									</li>
+									<li><a class="dropdown-item" href="#">Buy everything ciao a tutti quanti!</a></li>
+									<li><a class="dropdown-item" href="#">Buy everything ciao a tutti quanti!</a></li>
+									<li><a class="dropdown-item" href="#">Buy everything ciao a tutti quanti!</a></li>
+                                    
+								</ul>
+							</li>
+                            
+						    </ul>
+                            <!-- / Navbar left size -->
+                        
+                        
+						    <!-- Navbar right side -->
+                        
+						    <ul class="navbar-nav mb-2 mb-lg-0">
+                            
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                My Playstation
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <img src="img/play-menu-ico.png" alt="">
+                                        Playstation 5
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <img src="img/play-menu-ico.png" alt="">
+                                        Playstation 4
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <img src="img/play-menu-ico.png" alt="">
+                                        Playstation 3
+                                    </a>
+                                </li>
+                            </ul>
+                             </li>
+                        <!-- / Navbar right side -->
+                        
+                        </ul>
+                    </div>
                 </div>
             </nav>
-            <!-- / Header Nav Menu -->
-            
-        </nav>
+            <!-- / Header Navbar -->
+        
+        </div>
+
     </header>
     <!-- /Header End -->
-    
-    
+
+
 
     <!-- Ads. "Returnal" and Cards -->
     <section class="text-white">
-        
+    
         <!-- Returnal -->    
         <div class="jumbo">
             <div class="container">
@@ -162,8 +251,8 @@
 
         <!-- Bundle PS5 section -->
         <div class="container">
-            <div class="row px-3 justify-content-center">
-                <div class="">
+            <div class="row  px-3 justify-content-center">
+                <div class="col-md-6">
                     <h1>Console PlayStation 5</h1>
                     <p>Sperimenta la nuova generazione di incredibili giochi PlayStation.</p>
                     <button
@@ -177,28 +266,28 @@
                     </button>
                 </div>
 
-                <div class="">
+                <div class="col-md-6">
                     <div class="row cols-12">
                         <img class="img-fluid" src="assets/img/playstation-5-thumb.png" alt="">
                     </div>
                 </div>
 
                 <!-- PS5 accecories line -->
-                <div class="row row-cols-3 row-cols-md-5 g-4">
+                <div class="row row-cols-3 row-cols-md-5 g-4 mb-5">
                     <div class="col border-bottom border-primary border-3">
-                        <img class="img-fluid" src="assets/img/playstation-5-thumb.png" alt="">
+                        <img class="img-fluid pb-4" src="assets/img/playstation-5-thumb.png" alt="">Console PS5
                     </div>
                     <div class="col">
-                        <img class="img-fluid" src="assets/img/headset-thumb.png" alt="">
+                        <img class="img-fluid pb-4" src="assets/img/headset-thumb.png" alt="">Controller wireless DualSense
                     </div>
                     <div class="col">
-                        <img class="img-fluid" src="assets/img/playstation-5-thumb.png" alt="">
+                        <img class="img-fluid pb-4" src="assets/img/playstation-5-thumb.png" alt="">Cuffie wireless con microfono PULSE 3
                     </div>
                     <div class="col">
-                        <img class="img-fluid" src="assets/img/remote-thumb.png" alt="">
+                        <img class="img-fluid pb-4" src="assets/img/remote-thumb.png" alt="">Telecomando Media
                     </div>
                     <div class="col">
-                        <img class="img-fluid" src="assets/img/camera-thumb.jpg" alt="">
+                        <img class="img-fluid pb-4" src="assets/img/camera-thumb.jpg" alt="">Telecamera HD
                     </div>
                 </div>
                 <!-- / PS5 accecories line -->
@@ -232,50 +321,46 @@
 
 
         <!-- Twelve Cards -->
-        <div class="container bg-dark py-3">
+        <div class="bg-dark px-3">
 
             <!-- Cards -->
             <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-6 g-4">
                 
                 <!-- 1 -->
                 <div class="col">
-                    <div class="card rounded-4 overflow-hidden bg-dark">
+                    <div class="rounded-4 overflow-hidden bg-dark">
                         <img class="img-fluid" src="assets/img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="">
                         <p class="pt-3 fs-5">Tony Hawk's Pro Skater 1 + 2</p>                        
                     </div>
                 </div>
-                
                 
                 <!-- 2 -->
                 <div class="col">
-                    <div class="card rounded-4 overflow-hidden bg-dark">
+                    <div class="rounded-4 overflow-hidden bg-dark">
                         <img class="img-fluid" src="assets/img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="">
                         <p class="pt-3 fs-5">Crash Bandicot 4: It's About Time</p>                        
                     </div>
                 </div>
                 
-                
                 <!-- 3 -->
                 <div class="col">
-                    <div class="card rounded-4 overflow-hidden bg-dark">
+                    <div class="rounded-4 overflow-hidden bg-dark">
                         <img class="img-fluid" src="assets/img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="">
                         <p class="pt-3 fs-5">Tony Hawk's Pro Skater 1 + 2</p>                        
                     </div>
                 </div>
                 
-                
                 <!-- 4 -->
                 <div class="col">
-                    <div class="card rounded-4 overflow-hidden bg-dark">
+                    <div class="rounded-4 overflow-hidden bg-dark">
                         <img class="img-fluid" src="assets/img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="">
                         <p class="pt-3 fs-5">Crash Bandicot 4: It's About Time</p>                        
                     </div>
                 </div>
                 
-                
                 <!-- 5 -->
                 <div class="col">
-                    <div class="card rounded-4 overflow-hidden bg-dark">
+                    <div class="rounded-4 overflow-hidden bg-dark">
                         <img class="img-fluid" src="assets/img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="">
                         <p class="pt-3 fs-5">Tony Hawk's Pro Skater 1 + 2</p>                        
                     </div>
@@ -283,7 +368,55 @@
                 
                 <!-- 6 -->
                 <div class="col">
-                    <div class="card rounded-4 overflow-hidden bg-dark">
+                    <div class="rounded-4 overflow-hidden bg-dark">
+                        <img class="img-fluid" src="assets/img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="">
+                        <p class="pt-3 fs-5">Crash Bandicot 4: It's About Time</p>                        
+                    </div>
+                </div>
+                
+                <!-- 7 -->
+                <div class="col">
+                    <div class="rounded-4 overflow-hidden bg-dark">
+                        <img class="img-fluid" src="assets/img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="">
+                        <p class="pt-3 fs-5">Tony Hawk's Pro Skater 1 + 2</p>                        
+                    </div>
+                </div>
+                
+                <!-- 8 -->
+                <div class="col">
+                    <div class="rounded-4 overflow-hidden bg-dark">
+                        <img class="img-fluid" src="assets/img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="">
+                        <p class="pt-3 fs-5">Crash Bandicot 4: It's About Time</p>                        
+                    </div>
+                </div>
+                
+                <!-- 9 -->
+                <div class="col">
+                    <div class="rounded-4 overflow-hidden bg-dark">
+                        <img class="img-fluid" src="assets/img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="">
+                        <p class="pt-3 fs-5">Tony Hawk's Pro Skater 1 + 2</p>                        
+                    </div>
+                </div>
+                
+                <!-- 10 -->
+                <div class="col">
+                    <div class="rounded-4 overflow-hidden bg-dark">
+                        <img class="img-fluid" src="assets/img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="">
+                        <p class="pt-3 fs-5">Crash Bandicot 4: It's About Time</p>                        
+                    </div>
+                </div>
+                
+                <!-- 11 -->
+                <div class="col">
+                    <div class="rounded-4 overflow-hidden bg-dark">
+                        <img class="img-fluid" src="assets/img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="">
+                        <p class="pt-3 fs-5">Tony Hawk's Pro Skater 1 + 2</p>                        
+                    </div>
+                </div>
+                
+                <!-- 12 -->
+                <div class="col">
+                    <div class="rounded-4 overflow-hidden bg-dark">
                         <img class="img-fluid" src="assets/img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="">
                         <p class="pt-3 fs-5">Crash Bandicot 4: It's About Time</p>                        
                     </div>
@@ -300,10 +433,10 @@
 
 
     <!-- PS4 section -->
-    <section>
+    <section class="px-3">
 
         <!-- Title PS4 section -->
-        <div class="container text-center py-4">
+        <div class="text-center py-4">
             <div class="row">
                 <h1>Esplora PlayStation 4</h1>
                 <p class="text-secondary">Giochi incredibili e intrattenimento senza fine. Non c'è mai stato un momento migliore per giocare sulla tua PS4.</p>
@@ -312,11 +445,10 @@
         <!-- / Title PS4 section -->
 
         <!-- Bundle PS4/VR -->
-        <div class="container">
-            <div class="row justify-content-center px-3 py-4 gap-3">
+            <div class="row justify-content-center py-4">
                 
-                <div class="container">
-                    <div class="row row-cols-12 row-cols-md-4 justify-content-center">
+                <div class="col-12 col-md-4">
+                    <div class="row">
                         <img class="img-fluid" src="assets/img/ps4-slim-homepage-image-block.jpg" alt="">
                     </div>
                     <h1>PlayStation 4</h1>
@@ -324,8 +456,8 @@
                     <div class="btn btn-secondary bg-primary rounded-5 border">Scopri di più</div>
                 </div>
 
-                <div class="container">
-                    <div class="row row-cols-12 row-cols-md-4 justify-content-center">
+                <div class="col-12 col-md-4">
+                    <div class="row">
                         <img class="img-fluid" src="assets/img/double11-202010-tw-psvr.jpg" alt="">
                     </div>
                     <h1>PlayStation 4</h1>
@@ -333,8 +465,8 @@
                     <div class="btn btn-secondary bg-primary rounded-5 border">Scopri di più</div>
                 </div>
 
-                <div class="container">
-                    <div class="row row-cols-12 row-cols-md-4 justify-content-center">
+                <div class="col-12 col-md-4">
+                    <div class="row">
                         <img class="img-fluid" src="assets/img/dualshock-4-listing-thumb.jpg" alt="">
                     </div>
                     <h1>PlayStation 4</h1>
@@ -344,8 +476,7 @@
 
 
             </div>
-        </div>
-        <!-- / Bundle PS4/VR -->
+            <!-- / Bundle PS4/VR -->
 
 
     </section>
@@ -354,28 +485,29 @@
 
 
     <!-- PlayStationPlus -->
-    <section class="bg-warning text-white">
+    <section class="bg-light text-white">
 
         <div class="container">
 
+
             <!-- Start PP row -->
-            <div class="row px-3 py-4">
+            <div class="row align-items-center">
                 
                 
                 <!-- PP logo and text -->
-                <div class="col-8 col-md-6 pt-3">
+                <div class="col-12 col-md-6 py-3">
                     <img class="img-fluid" src="assets/img/ps-plus-logo.png" alt="">
-                </div>
-                <div class="col-12 col-md-6">
-                    <p class="pt-4 pb-3">Migliora la tua esperienza PlayStation con l'accesso a multigiocatore online, giochi mensili, sconti esclusivi e altro ancora.</p>
-                    <div class="btn btn-secondary bg-warning text-primary rounded-5 border">Esplora PlayStation Plus</div>
+                    <div>
+                        <p class="pt-4 pb-3">Migliora la tua esperienza PlayStation con l'accesso a multigiocatore online, giochi mensili, sconti esclusivi e altro ancora.</p>
+                        <div class="btn btn-secondary bg-warning text-primary rounded-5 border">Esplora PlayStation Plus</div>
+                    </div>
                 </div>
                 <!-- / PP logo and text -->
                 
                 
                 <!-- PP GamesPic -->
-                <div class="PPM col-md-6">
-                    <img class="img-fluid" src="assets/img/ps-plus-april-monthly-games-featured-image-block.png" alt="">
+                <div class="col-md-6">
+                    <img class="img-fluid h-100 w-auto d-none d-md-block" src="assets/img/ps-plus-april-monthly-games-featured-image-block.png" alt="">
                 </div>
                 <!-- / PP GamesPic -->
                 
@@ -395,7 +527,7 @@
     <section>
         <div class="container py-4">
 
-            <div class="row gap-3">
+            <div class="row">
 
                 <!-- Discount title -->
                 <div class="col-12 text-center py-5 px-5">
@@ -404,18 +536,18 @@
                 </div>
                 
                 <!-- Disc. section 1 -->
-                <div class="col-12">
+                <div class="col-12 col-md-4">
                     <img class="img-fluid" src="assets/img/playstation-store-games-under-20-spotlight.jpg" alt="">
                 </div>
                 
                 
                 <!-- Disc. section 2 -->
-                <div class="col-12">
+                <div class="col-12 col-md-4">
                     <img class="img-fluid" src="assets/img/playstation-store-golden-week-sale-spotlight.jpg" alt="">
                 </div>
                 
                 <!-- Disc. section 3 -->
-                <div class="col-12">
+                <div class="col-12 col-md-4">
                     <img class="img-fluid" src="assets/img/playstation-store-free-to-play-spotlight.png" alt="">
                 </div>
 
@@ -429,26 +561,23 @@
     <!-- PlayStation Now -->
     <section class="bg-primary">
 
-        <div class="container my-5">
+        <div class="container">
 
             <!-- Start PP row -->
-            <div class="row px-3 py-4">
+            <div class="row align-items-center">
                 
                 
                 <!-- PP logo and text -->
-                <div class="col-8 col-md-6 pt-3">
+                <div class="col-12 col-md-6 py-3">
                     <img class="img-fluid" src="assets/img/ps-now-logo-two-column.png" alt="">
-                </div>
-
-                <div class="col-12 col-md-6">
                     <p class="text-white pt-4 pb-3">Ottieni l'accesso immediato a una vastissima raccolta di oltre 800 giochi per PS4, PS3 e PS2 su PS4 o pc Windows, con nuovi titoli aggiunti ogni mese.</p>
                     <div class="btn btn-secondary bg-light text-dark fw-bold rounded-5 border">Esplora PlayStation Plus</div>
                 </div>
                 <!-- / PP logo and text -->
                 
                 <!-- PP GamesPic -->
-                <div class="PPN col-md-6">
-                    <img class="img-fluid" src="assets/img/ps-now-april-featured-image-block.png" alt="">
+                <div class="col-md-6">
+                    <img class="img-fluid h-100 w-auto d-none d-md-block" src="assets/img/ps-now-april-featured-image-block.png" alt="">
                 </div>
                 <!-- / PP GamesPic -->
                 
@@ -507,14 +636,71 @@
     
     
     <!-- footer -->
-    <footer class="bg-primary">
+    <footer class="bg-primary p-3 text-white">
+
+        <!-- Container footer  -->
         <div class="container">
+
             <div class="row">
 
+                <!-- Logo PS and Reagion -->
+                <div class="col-12 col-lg-6">
+                    <div class="pt-3 pb-4"><img class="img-fluid" src="assets/img/ps-footer.svg" alt=""></div>
+                    <p><i class="fa-solid fa-globe"></i> Country / Region: Italy</p>
+                </div>
+                <!-- / Logo PS and Reagion -->
+
+
+                <!-- 1st Links -->
+                <div class="col-12 col-lg-2">
+                    <ul class="list-unstyled">
+                        <li><a href="">Link Footer</a></li>
+                        <li><a href="">Link Footer</a></li>
+                        <li><a href="">Link Footer</a></li>
+                        <li><a href="">Link Footer</a></li>
+                        <li><a href="">Link Footer</a></li>
+                    </ul>
+                </div>
+
+
+                <!-- 2nd Links -->
+                <div class="col-12 col-lg-2">
+                    <ul class="list-unstyled">
+                        <li><a href="">Link Footer</a></li>
+                        <li><a href="">Link Footer</a></li>
+                        <li><a href="">Link Footer</a></li>
+                        <li><a href="">Link Footer</a></li>
+                        <li><a href="">Link Footer</a></li>
+                        <li><a href="">Link Footer</a></li>
+                        <li><a href="">Link Footer</a></li>
+                        <li><a href="">Link Footer</a></li>
+                    </ul>
+                </div>
+
+
+                <!-- 3rd Links -->
+                <div class="col-12 col-lg-2">
+                    <ul class="list-unstyled">
+                        <li><a href="">Link Footer</a></li>
+                        <li><a href="">Link Footer</a></li>
+                        <li><a href="">Link Footer</a></li>
+                    </ul>
+                </div>
+
             </div>
+
+            <!-- Copyrights -->
+            <div class="col-12 col-lg-6">
+                <div ><img class="img-fluid col-3 mb-1" src="assets/img/sie-logo.svg" alt=""></div>
+                <p class="col-12">Website 2021 Sony Interactive Entertainment Europe Limited. Tutti i contenuti, nomi dei giochi, nomi commerciali e/o di abbigliamento, marchi registrati, grafica e immagini associati, sono marchi registrati e/o materiale protetto da copyright dei rispettivi proprietari. Tutti i diritti riservati. <a href="">Maggiori info</a></p>
+            </div>
+            <!-- / Copyrights -->
+
+
         </div>
+        <!-- / Container footer  -->
+
     </footer>
-    
     <!-- / footer -->
 
 
