@@ -2,12 +2,40 @@
     font-family: 'Noto Sans', sans-serif;
 }
 
+.dropdown {
+	position: static;
+}
+
+.dropdown-menu[data-bs-popper] {
+	width: 100%;
+	margin-top: 0;
+}
+
+.dropdown-menu {
+	border: none;
+	border-radius: 0;
+}
+
+.dropdown-menu.show {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.dropdown-item {
+	text-align: center;
+}
+
+.dropdown-item img {
+	display: block;
+	width: 100%;
+}
+
 .jumbo {
     background-image: url('../assets/img/jumbo-bg.png');
     background-size: cover;
     background-position: center;
     padding: 200px 0 50px;
-
 }
 
 .ITT {
